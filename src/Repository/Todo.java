@@ -1,6 +1,6 @@
 package Repository;
 
-public class Todo {
+public abstract class Todo {
 	protected String content;
 
 	public Todo(String content) {
@@ -20,9 +20,11 @@ public class Todo {
 		return "Todo[ content : " + content + " ] ";
 	}
 
-	public void setTodo() {
-		// TODO Auto-generated method stub
-
-	}
+//	public void setTodo() {
+//		// TODO Auto-generated method stub
+//		
+//	}
+	
+	public abstract void setTodo();
 
 }

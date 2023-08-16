@@ -60,10 +60,10 @@ public class TodoService {
 	public void addTodo(String todoContent, int priority) {
 
 		System.out.println("Choose the Todo you want to add");
-		System.out.println("1. Simple Todo");
-		System.out.println("2. Shopping Todo");
-		System.out.println("3. Groceries Todo");
-		System.out.println("4. Company Todo");
+//		System.out.println("1. Simple Todo");
+		System.out.println("1. Shopping Todo");
+		System.out.println("2. Groceries Todo");
+		System.out.println("3. Company Todo");
 
 		Scanner s = new Scanner(System.in);
 
@@ -86,23 +86,23 @@ public class TodoService {
 		Todo todo = null;
 
 		switch (todoChoice) {
-		case 1:
-			todo = new Todo(todoContent);
+//		case 1:
+//			todo = new Todo(todoContent);
 //				 todo.setTodo();
-			break;
-		case 2:
+//			break;
+		case 1:
 			// shoppingTodo
 			todo = new ShoppingTodo(todoContent);
 			todo.setTodo();
 			break;
 
-		case 3:
+		case 2:
 			// groceries todo
 			todo = new GroceriesTodo(todoContent);
 			todo.setTodo();
 			break;
 
-		case 4:
+		case 3:
 //				 //company todo
 			todo = new CompanyTodo(todoContent);
 			todo.setTodo();
