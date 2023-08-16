@@ -20,10 +20,7 @@ public abstract class Todo {
 		return "Todo[ content : " + content + " ] ";
 	}
 
-//	public void setTodo() {
-//		// TODO Auto-generated method stub
-//		
-//	}
+
 	
 	public abstract void setTodo();
 
